@@ -1,0 +1,13 @@
+THE BIG FAT BACKLOG 
+
+
+*- create backup function
+    - create backup folder if not exists
+
+- create settings file to read user preferences
+    - check for settings file
+
+- read file and edit specific columns and save
+
+
+- create simple gui window

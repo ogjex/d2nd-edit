@@ -1,5 +1,6 @@
 import shutil
 import os
+import sys
 
 def backup_txt(input_file, backup_folder):
     """
@@ -22,9 +23,44 @@ def backup_txt(input_file, backup_folder):
     # Copy the input file to the backup location
     shutil.copy(input_file, backup_file)
 
+def multiply_columns(input_file, x):
+    """
+    Function to multiply specified columns by x.
+
+    Args:
+    - input_file: Path to the input text file.
+    - x: Value to multiply the columns by.
+    """
+    # Read the contents of the input file
+    with open(input_file, 'r') as f:
+        lines = f.readlines()
+
+    # Modify the specified columns
+    modified_lines = []
+    for line in lines:
+        columns = line.split('\t')
+        # Check if the line has enough columns
+        if len(columns) >= 3:
+            # Multiply the specified columns by x
+            for i in range(3):
+                columns[i] = str(float(columns[i]) * x)
+        modified_lines.append('\t'.join(columns))
+
+    # Write the modified lines back to the file
+    with open(input_file, 'w') as f:
+        f.writelines(modified_lines)
+
 def main():
+    # Check if an input file and multiplication factor are provided
+    if len(sys.argv) < 3:
+        print("Usage: python main.py <input_file> <multiplication_factor>")
+        sys.exit(1)
+
     # Input text file path
-    input_file = 'levels.txt'
+    input_file = sys.argv[1]
+
+    # Multiplication factor
+    x = float(sys.argv[2])
 
     # Backup folder path
     backup_folder = 'backup'
@@ -32,8 +68,8 @@ def main():
     # Call the backup function
     backup_txt(input_file, backup_folder)
 
-    # Now you can read the text file, edit the desired column,
-    # and save the changes.
+    # Multiply the specified columns by x
+    multiply_columns(input_file, x)
 
 if __name__ == "__main__":
     main()
