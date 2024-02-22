@@ -11,7 +11,7 @@ if not os.path.exists(original_directory):
     os.makedirs(original_directory)
 
 # Desired size of the icons
-desired_size = (48, 48)
+desired_size = (200, 48)
 
 # Move original files to 'original' directory and resize them
 for filename in os.listdir(directory):

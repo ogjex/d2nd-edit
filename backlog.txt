@@ -16,4 +16,10 @@ THE BIG FAT BACKLOG
     - refactored function to freely define which columns to edit
     - test with actual file (not test file)
 
-- create simple gui window
+*- create simple gui window
+
+- GUI advanced
+    - add buttons and sliders
+    - add save/reset buttons to lower area
+    - link buttons to backend
+    
