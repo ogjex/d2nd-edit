@@ -21,7 +21,7 @@ def backup_txt(input_file):
 
     # If the destination file doesn't exist, copy the input file to the default_excel folder
     if not os.path.exists(destination_file):
-        shutil.copy(input_file, destination_file)
+        shutil.copy(input_file, destination_file)   
         print(f"File '{file_name}' copied to 'default_excel' folder.")
     else:
         print(f"File '{file_name}' already exists in 'default_excel' folder.")

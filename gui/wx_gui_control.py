@@ -2,7 +2,7 @@ import wx
 
 class MyFrame(wx.Frame):
     def __init__(self):
-        super().__init__(None, title="Vertical Tabs Example", size=(800, 600))
+        super().__init__(None, title="D2ND Content Manager", size=(800, 650))
         
         # Main panel to hold all the components
         main_panel = wx.Panel(self)
@@ -39,17 +39,28 @@ class MyFrame(wx.Frame):
         image_list = wx.ImageList(200, 48)  # Initial size of icons
         
         # Add tabs with icons only
-        tab_labels = ["Inventory", "Monsters", "Drops", "Unused Tab", "Backup and restore", "Content Manager Settings"]
+        tab_labels = ["Monsters", "Inventory", "Drops", "Backup and restore", "Content Manager Settings"]
         for i, label in enumerate(tab_labels):
             page = wx.Panel(notebook)
             icon_path = f"img/tab_{i+1}.png"
             icon = wx.Bitmap(icon_path, wx.BITMAP_TYPE_PNG)
             image_list.Add(icon)
-            notebook.AddPage(page, "", imageId=i)  # Empty string for label
+            notebook.AddPage(page, "", imageId=i)  # Empty string for title
             sizer_page = wx.BoxSizer(wx.VERTICAL)
             if label == "Monsters":
-                # Add content for Monsters tab
+
+                # Add Sizer to add content to
                 monsters_sizer = wx.BoxSizer(wx.VERTICAL)
+
+                # Add Tab title label
+                title_text = wx.StaticText(page, label="Monster Modifications")
+                title_text.SetFont(wx.Font(16, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_BOLD))
+                title_text.SetForegroundColour(wx.Colour(0, 0, 0))  # Set text color
+                title_text.Wrap(300)  # Wrap text if it exceeds 300 pixels in width
+                title_text.SetSize(title_text.GetBestSize())  # Adjust the size according to the text
+                monsters_sizer.Add(title_text, 0, wx.ALIGN_CENTER_HORIZONTAL | wx.ALL, 5)
+
+                # Add content for Monsters tab
                 difficulty_text = wx.StaticText(page, label="Difficulty:")
                 monsters_sizer.Add(difficulty_text, 0, wx.ALL, 5)
                 # Add checkboxes
@@ -81,6 +92,10 @@ class MyFrame(wx.Frame):
                 # Add slider for Unique
                 slider_unique = wx.Slider(page, value=1, minValue=1, maxValue=8, size=(300, -1), style=wx.SL_HORIZONTAL|wx.SL_AUTOTICKS|wx.SL_LABELS)
                 monsters_sizer.Add(slider_unique, 0, wx.ALL, 5)
+
+                # Add Reset button
+                reset_button = wx.Button(page, label="Reset values", size=(100, 50))
+                monsters_sizer.Add(reset_button, 0, wx.ALIGN_CENTER_HORIZONTAL | wx.ALL, 5)
 
                 # Add monsters_sizer to the page sizer
                 sizer_page.Add(monsters_sizer, 0, wx.ALL, 10)
