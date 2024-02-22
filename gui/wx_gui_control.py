@@ -52,17 +52,25 @@ class MyFrame(wx.Frame):
                 # Add Sizer to add content to
                 monsters_sizer = wx.BoxSizer(wx.VERTICAL)
 
+                # Create a nested sizer structure for left padding
+                left_padding_sizer = wx.BoxSizer(wx.HORIZONTAL)
+                left_padding_sizer.AddSpacer(200)  # Adjust the width as needed
+
+                # Add the left padding sizer to the monsters sizer before adding any content
+                monsters_sizer.Add(left_padding_sizer)
+
                 # Add Tab title label
                 title_text = wx.StaticText(page, label="Monster Modifications")
                 title_text.SetFont(wx.Font(16, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_BOLD))
                 title_text.SetForegroundColour(wx.Colour(0, 0, 0))  # Set text color
                 title_text.Wrap(300)  # Wrap text if it exceeds 300 pixels in width
                 title_text.SetSize(title_text.GetBestSize())  # Adjust the size according to the text
-                monsters_sizer.Add(title_text, 0, wx.ALIGN_CENTER_HORIZONTAL | wx.ALL, 5)
+                monsters_sizer.Add(title_text, 0, wx.ALIGN_CENTER_HORIZONTAL | wx.LEFT, 150)
 
                 # Add content for Monsters tab
                 difficulty_text = wx.StaticText(page, label="Difficulty:")
                 monsters_sizer.Add(difficulty_text, 0, wx.ALL, 5)
+                
                 # Add checkboxes
                 checkboxes = ["Easy", "Medium", "Hard"]
                 for checkbox_label in checkboxes:
@@ -95,7 +103,7 @@ class MyFrame(wx.Frame):
 
                 # Add Reset button
                 reset_button = wx.Button(page, label="Reset values", size=(100, 50))
-                monsters_sizer.Add(reset_button, 0, wx.ALIGN_CENTER_HORIZONTAL | wx.ALL, 5)
+                monsters_sizer.Add(reset_button, 0, wx.ALIGN_LEFT | wx.ALL, 5)
 
                 # Add monsters_sizer to the page sizer
                 sizer_page.Add(monsters_sizer, 0, wx.ALL, 10)
