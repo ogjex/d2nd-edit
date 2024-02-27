@@ -1,0 +1,98 @@
+2024-02-27 13:25:33 - WARNING - File 'levels.txt' already exists in 'default_excel' folder.
+2024-02-27 13:25:33 - WARNING - Unable to convert column value to float at line 2, column index 66. Skipping multiplication.
+2024-02-27 13:25:33 - WARNING - Unable to convert column value to float at line 3, column index 66. Skipping multiplication.
+2024-02-27 13:25:33 - WARNING - Unable to convert column value to float at line 10, column index 66. Skipping multiplication.
+2024-02-27 13:25:33 - WARNING - Unable to convert column value to float at line 19, column index 66. Skipping multiplication.
+2024-02-27 13:25:33 - WARNING - Unable to convert column value to float at line 22, column index 66. Skipping multiplication.
+2024-02-27 13:25:33 - WARNING - Unable to convert column value to float at line 42, column index 66. Skipping multiplication.
+2024-02-27 13:25:33 - WARNING - Unable to convert column value to float at line 48, column index 66. Skipping multiplication.
+2024-02-27 13:25:33 - WARNING - Unable to convert column value to float at line 52, column index 66. Skipping multiplication.
+2024-02-27 13:25:33 - WARNING - Unable to convert column value to float at line 53, column index 66. Skipping multiplication.
+2024-02-27 13:25:33 - WARNING - Unable to convert column value to float at line 77, column index 66. Skipping multiplication.
+2024-02-27 13:25:33 - WARNING - Unable to convert column value to float at line 105, column index 66. Skipping multiplication.
+2024-02-27 13:25:33 - WARNING - Unable to convert column value to float at line 111, column index 64. Skipping multiplication.
+2024-02-27 13:25:33 - WARNING - Unable to convert column value to float at line 111, column index 65. Skipping multiplication.
+2024-02-27 13:25:33 - WARNING - Unable to convert column value to float at line 111, column index 66. Skipping multiplication.
+2024-02-27 13:25:33 - WARNING - Unable to convert column value to float at line 112, column index 66. Skipping multiplication.
+2024-02-27 13:25:33 - WARNING - Unable to convert column value to float at line 123, column index 66. Skipping multiplication.
+2024-02-27 13:25:33 - WARNING - Unable to convert column value to float at line 124, column index 66. Skipping multiplication.
+2024-02-27 13:25:33 - WARNING - Unable to convert column value to float at line 127, column index 66. Skipping multiplication.
+2024-02-27 13:25:33 - WARNING - Unable to convert column value to float at line 135, column index 66. Skipping multiplication.
+2024-02-27 13:25:33 - WARNING - Unable to convert column value to float at line 137, column index 66. Skipping multiplication.
+2024-02-27 13:25:33 - INFO - Columns 'MonDen', 'MonDen(N)', and 'MonDen(H)' multiplied by 4.0 in file 'levels.txt'.
+2024-02-27 13:26:39 - WARNING - File 'levels' could not be found in 'default_excel' folder.
+2024-02-27 13:29:17 - INFO - File 'levels.txt' restored to main folder.
+2024-02-27 13:29:38 - WARNING - File 'levels.txt' already exists in 'default_excel' folder.
+2024-02-27 13:29:38 - WARNING - Unable to convert column value to float at line 2, column index 66. Skipping multiplication.
+2024-02-27 13:29:38 - WARNING - Unable to convert column value to float at line 3, column index 66. Skipping multiplication.
+2024-02-27 13:29:38 - WARNING - Unable to convert column value to float at line 10, column index 66. Skipping multiplication.
+2024-02-27 13:29:38 - WARNING - Unable to convert column value to float at line 19, column index 66. Skipping multiplication.
+2024-02-27 13:29:38 - WARNING - Unable to convert column value to float at line 22, column index 66. Skipping multiplication.
+2024-02-27 13:29:38 - WARNING - Unable to convert column value to float at line 42, column index 66. Skipping multiplication.
+2024-02-27 13:29:38 - WARNING - Unable to convert column value to float at line 48, column index 66. Skipping multiplication.
+2024-02-27 13:29:38 - WARNING - Unable to convert column value to float at line 52, column index 66. Skipping multiplication.
+2024-02-27 13:29:38 - WARNING - Unable to convert column value to float at line 53, column index 66. Skipping multiplication.
+2024-02-27 13:29:38 - WARNING - Unable to convert column value to float at line 77, column index 66. Skipping multiplication.
+2024-02-27 13:29:38 - WARNING - Unable to convert column value to float at line 105, column index 66. Skipping multiplication.
+2024-02-27 13:29:38 - WARNING - Unable to convert column value to float at line 111, column index 64. Skipping multiplication.
+2024-02-27 13:29:38 - WARNING - Unable to convert column value to float at line 111, column index 65. Skipping multiplication.
+2024-02-27 13:29:38 - WARNING - Unable to convert column value to float at line 111, column index 66. Skipping multiplication.
+2024-02-27 13:29:38 - WARNING - Unable to convert column value to float at line 112, column index 66. Skipping multiplication.
+2024-02-27 13:29:38 - WARNING - Unable to convert column value to float at line 123, column index 66. Skipping multiplication.
+2024-02-27 13:29:38 - WARNING - Unable to convert column value to float at line 124, column index 66. Skipping multiplication.
+2024-02-27 13:29:38 - WARNING - Unable to convert column value to float at line 127, column index 66. Skipping multiplication.
+2024-02-27 13:29:38 - WARNING - Unable to convert column value to float at line 135, column index 66. Skipping multiplication.
+2024-02-27 13:29:38 - WARNING - Unable to convert column value to float at line 137, column index 66. Skipping multiplication.
+2024-02-27 13:29:38 - INFO - Columns 'MonDen', 'MonDen(N)', and 'MonDen(H)' multiplied by 4.0 in file 'levels.txt'.
+2024-02-27 13:31:55 - INFO - File 'levels.txt' restored to main folder.
+2024-02-27 13:32:03 - WARNING - File 'levels.txt' already exists in 'default_excel' folder.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 2, column index 66. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 2, column index 67. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 3, column index 66. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 3, column index 67. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 10, column index 66. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 10, column index 67. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 19, column index 66. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 19, column index 67. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 22, column index 66. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 22, column index 67. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 42, column index 66. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 42, column index 67. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 48, column index 66. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 48, column index 67. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 52, column index 66. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 52, column index 67. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 53, column index 66. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 53, column index 67. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 77, column index 66. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 77, column index 67. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 105, column index 66. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 105, column index 67. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 111, column index 65. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 111, column index 66. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 111, column index 67. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 112, column index 66. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 112, column index 67. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 123, column index 66. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 123, column index 67. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 124, column index 66. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 124, column index 67. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 127, column index 66. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 127, column index 67. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 135, column index 66. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 135, column index 67. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 137, column index 66. Skipping multiplication.
+2024-02-27 13:32:03 - WARNING - Unable to convert column value to float at line 137, column index 67. Skipping multiplication.
+2024-02-27 13:32:03 - INFO - Columns 'MonDen', 'MonDen(N)', and 'MonDen(H)' multiplied by 4.0 in file 'levels.txt'.
+2024-02-27 13:32:55 - INFO - File 'levels.txt' restored to main folder.
+2024-02-27 13:32:59 - WARNING - File 'levels.txt' already exists in 'default_excel' folder.
+2024-02-27 13:32:59 - WARNING - Unable to convert column value to float at line 111, column index 63. Skipping multiplication.
+2024-02-27 13:32:59 - WARNING - Unable to convert column value to float at line 111, column index 64. Skipping multiplication.
+2024-02-27 13:32:59 - WARNING - Unable to convert column value to float at line 111, column index 65. Skipping multiplication.
+2024-02-27 13:32:59 - INFO - Columns 'MonDen', 'MonDen(N)', and 'MonDen(H)' multiplied by 4.0 in file 'levels.txt'.
+2024-02-27 13:39:32 - INFO - File 'levels.txt' restored to main folder.
+2024-02-27 13:39:48 - WARNING - File 'levels.txt' already exists in 'default_excel' folder.
+2024-02-27 13:39:48 - WARNING - Unable to convert column value to float at line 111, column index 63. Skipping multiplication.
+2024-02-27 13:39:48 - WARNING - Unable to convert column value to float at line 111, column index 64. Skipping multiplication.
+2024-02-27 13:39:48 - WARNING - Unable to convert column value to float at line 111, column index 65. Skipping multiplication.
+2024-02-27 13:39:48 - INFO - Columns 'MonDen', 'MonDen(N)', and 'MonDen(H)' multiplied by 4.0 in file 'levels.txt'.
