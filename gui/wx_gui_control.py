@@ -85,21 +85,21 @@ class MyFrame(wx.Frame):
                 slider_density = wx.Slider(page, value=1, minValue=1, maxValue=8, size=(300, -1), style=wx.SL_HORIZONTAL|wx.SL_AUTOTICKS|wx.SL_LABELS)
                 monsters_sizer.Add(slider_density, 0, wx.ALL, 5)
                
-                # Add Champion label
-                champion_text = wx.StaticText(page, label="Champion Rarity")
-                monsters_sizer.Add(champion_text, 0, wx.ALL, 5)
+                # Add umon minimum label
+                umon_min_text = wx.StaticText(page, label="Unique and Champion spawn Minimum")
+                monsters_sizer.Add(umon_min_text, 0, wx.ALL, 5)
                 
-                # Add slider for Champion
-                slider_champion = wx.Slider(page, value=1, minValue=1, maxValue=8, size=(300, -1), style=wx.SL_HORIZONTAL|wx.SL_AUTOTICKS|wx.SL_LABELS)
-                monsters_sizer.Add(slider_champion, 0, wx.ALL, 5)
+                # Add slider for umon minimum
+                slider_umon_min = wx.Slider(page, value=1, minValue=1, maxValue=8, size=(300, -1), style=wx.SL_HORIZONTAL|wx.SL_AUTOTICKS|wx.SL_LABELS)
+                monsters_sizer.Add(slider_umon_min, 0, wx.ALL, 5)
 
-                # Add Unique label
-                unique_text = wx.StaticText(page, label="Unique Rarity:")
-                monsters_sizer.Add(unique_text, 0, wx.ALL, 5)
+                # Add umon maximum label
+                umon_max_text = wx.StaticText(page, label="Unique and Champion spawn Maximum")
+                monsters_sizer.Add(umon_max_text, 0, wx.ALL, 5)
                 
-                # Add slider for Unique
-                slider_unique = wx.Slider(page, value=1, minValue=1, maxValue=8, size=(300, -1), style=wx.SL_HORIZONTAL|wx.SL_AUTOTICKS|wx.SL_LABELS)
-                monsters_sizer.Add(slider_unique, 0, wx.ALL, 5)
+                # Add slider for umon maximum
+                slider_umon_max = wx.Slider(page, value=1, minValue=1, maxValue=8, size=(300, -1), style=wx.SL_HORIZONTAL|wx.SL_AUTOTICKS|wx.SL_LABELS)
+                monsters_sizer.Add(slider_umon_max, 0, wx.ALL, 5)
 
                 # Add Reset button
                 reset_button = wx.Button(page, label="Reset values", size=(100, 50))
