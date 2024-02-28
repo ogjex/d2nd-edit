@@ -96,3 +96,13 @@
 2024-02-27 13:39:48 - WARNING - Unable to convert column value to float at line 111, column index 64. Skipping multiplication.
 2024-02-27 13:39:48 - WARNING - Unable to convert column value to float at line 111, column index 65. Skipping multiplication.
 2024-02-27 13:39:48 - INFO - Columns 'MonDen', 'MonDen(N)', and 'MonDen(H)' multiplied by 4.0 in file 'levels.txt'.
+2024-02-28 09:51:08 - WARNING - Unable to convert column value to float at line 111, column index 63. Skipping multiplication.
+2024-02-28 09:51:08 - WARNING - Unable to convert column value to float at line 111, column index 64. Skipping multiplication.
+2024-02-28 09:51:08 - WARNING - Unable to convert column value to float at line 111, column index 65. Skipping multiplication.
+2024-02-28 09:51:08 - INFO - Columns 'MonDen', 'MonDen(N)', and 'MonDen(H)' multiplied by 4 in file 'levels.txt'.
+2024-02-28 09:51:08 - INFO - Modified file saved to 'c:\Users\Magnus\GitHub\d2nd-edit\modded_files\levels.txt'.
+2024-02-28 09:53:36 - WARNING - Unable to convert column value to float at line 111, column index 63. Skipping multiplication.
+2024-02-28 09:53:36 - WARNING - Unable to convert column value to float at line 111, column index 64. Skipping multiplication.
+2024-02-28 09:53:36 - WARNING - Unable to convert column value to float at line 111, column index 65. Skipping multiplication.
+2024-02-28 09:53:36 - INFO - Columns at indices [63, 64, 65] multiplied by 8 in file 'levels.txt'.
+2024-02-28 09:53:36 - INFO - Modified file saved to 'c:\Users\Magnus\GitHub\d2nd-edit\modded_files\levels.txt'.

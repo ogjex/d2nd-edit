@@ -1,25 +1,34 @@
+import os
+import shutil
 import logging
 import logger_config  # Import the logging configuration module
 
 # Configure logging
 logger_config.configure_logging()
 
-def multiply_columns(input_file, x):
+def multiply_columns(input_file, x, column_indices, destination_folder=None):
     """
     Function to multiply specified columns by x.
 
     Args:
     - input_file: Path to the input text file.
     - x: Value to multiply the columns by.
+    - column_indices: List of column indices to modify.
+    - destination_folder: Optional. Path to the destination folder to save the modified file.
+      If not provided, the file will be saved to "modded_files" in the same folder as the program.
     """
     try:
-        # Read the contents of the input file
-        with open(input_file, 'r') as f:
-            lines = f.readlines()
+        # Construct the path to the default file in "default_excel" folder
+        default_folder = "default_excel"
+        default_file = os.path.join(default_folder, os.path.basename(input_file))
 
-        # Modify the specified columns ('MonDen', 'MonDen(N)', and 'MonDen(H)')
+        # Read the contents of the default file
+        with open(default_file, 'r') as f:
+            default_lines = f.readlines()
+
+        # Modify the specified columns
         modified_lines = []
-        for idx, line in enumerate(lines):
+        for idx, line in enumerate(default_lines):
             # Skip the header row
             if idx == 0:
                 modified_lines.append(line)
@@ -27,9 +36,9 @@ def multiply_columns(input_file, x):
 
             columns = line.split('\t')
             # Check if the line has enough columns
-            if len(columns) >= 65:  # Assuming 'MonDen', 'MonDen(N)', and 'MonDen(H)' are columns 63, 64, and 65
+            if len(columns) >= max(column_indices) + 1:
                 # Multiply the specified columns by x and convert to integer
-                for col_idx in [63, 64, 65]:
+                for col_idx in column_indices:
                     try:
                         columns[col_idx] = str(int(float(columns[col_idx]) * x))
                     except ValueError:
@@ -37,15 +46,24 @@ def multiply_columns(input_file, x):
                         logging.warning(f"Unable to convert column value to float at line {idx + 1}, column index {col_idx}. Skipping multiplication.")
             modified_lines.append('\t'.join(columns))
 
-        # Write the modified lines back to the file
-        with open(input_file, 'w') as f:
+        # Determine the destination folder
+        if destination_folder is None:
+            destination_folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), "modded_files")
+        os.makedirs(destination_folder, exist_ok=True)
+
+        # Construct the path to the destination file
+        destination_file = os.path.join(destination_folder, os.path.basename(default_file))
+
+        # Write the modified lines to the destination file
+        with open(destination_file, 'w') as f:
             f.writelines(modified_lines)
-        
-        logging.info(f"Columns 'MonDen', 'MonDen(N)', and 'MonDen(H)' multiplied by {x} in file '{input_file}'.")
+
+        logging.info(f"Columns at indices {column_indices} multiplied by {x} in file '{input_file}'.")
+        logging.info(f"Modified file saved to '{destination_file}'.")
     except Exception as e:
         logging.error(f"Error occurred during column multiplication operation for file '{input_file}': {e}")
 
 # Example usage
 if __name__ == "__main__":
-    # Example multiplication with x = 2
-    multiply_columns('example.txt', 2)
+    # Example multiplication with x = 8 for columns at indices 63, 64, and 65
+    multiply_columns('levels.txt', 8, [63, 64, 65])
