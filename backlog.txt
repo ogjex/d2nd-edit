@@ -3,23 +3,32 @@ THE BIG FAT BACKLOG
 
 *- create backup function
     *- create backup folder if not exists
+    - add char backup
+    - add appended numbers if multiple backups from same day
+    - add optional comment on backups (saved as a .txt file)
+
 *- create restore defaults
-    - restore all defaults
+    *- restore all defaults
 
-- create settings file to read user preferences
-    - check for settings file
+*- create settings file to read user preferences
+    *- check for settings file and create if none exists
+    - add the column numbers so the edit column can be told which to edit
 
-- create logging function
+*- create logging function
+    - add logging level
 
-- read file and edit specific columns and save
+*- read file and edit specific columns and save
     *- read and edit monster density columns
-    - refactored function to freely define which columns to edit
-    - test with actual file (not test file)
+    *- refactored function to freely define which columns to edit
+    *- test with actual file (not test file)
 
 *- create simple gui window
 
 - GUI advanced
-    - add buttons and sliders
-    - add save/reset buttons to lower area
+    *- add buttons and sliders
+    - add save button to lower left area
+    - add restore all button default values to slider area
+    - add rename of personal stash columns
     - link buttons to backend
-    
+    - add dropdown to determine logging level
+
