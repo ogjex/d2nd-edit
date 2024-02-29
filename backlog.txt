@@ -1,5 +1,9 @@
 THE BIG FAT BACKLOG 
 
+- Code Improvement
+    - make code Object Oriented
+    - make code into MVC
+    - incorporate pubsub system
 
 *- create backup function
     *- create backup folder if not exists
