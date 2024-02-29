@@ -106,3 +106,110 @@
 2024-02-28 09:53:36 - WARNING - Unable to convert column value to float at line 111, column index 65. Skipping multiplication.
 2024-02-28 09:53:36 - INFO - Columns at indices [63, 64, 65] multiplied by 8 in file 'levels.txt'.
 2024-02-28 09:53:36 - INFO - Modified file saved to 'c:\Users\Magnus\GitHub\d2nd-edit\modded_files\levels.txt'.
+2024-02-28 11:33:26 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-28 11:33:26 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-28 11:33:26 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-28 11:33:26 - ERROR - Error occurred during folder backup operation: [WinError 3] The system cannot find the path specified: 'source_folder'
+2024-02-28 11:36:02 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-28 11:36:02 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-28 11:36:02 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-28 11:36:02 - ERROR - Error occurred during folder backup operation: [WinError 3] The system cannot find the path specified: 'source_folder'
+2024-02-28 11:40:57 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-28 11:40:57 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-28 11:40:57 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-28 11:40:57 - ERROR - Error occurred during folder backup operation: [WinError 3] The system cannot find the path specified: 'source_folder'
+2024-02-28 11:41:06 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-28 11:41:06 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-28 11:41:06 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-28 11:41:06 - ERROR - Error occurred during folder backup operation: [WinError 183] Cannot create a file when that file already exists: 'destination_folder_20240228'
+2024-02-28 11:41:14 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-28 11:41:14 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-28 11:41:14 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-28 11:41:14 - ERROR - Error occurred during folder backup operation: [WinError 3] The system cannot find the path specified: 'source_folder'
+2024-02-28 11:41:23 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-28 11:41:23 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-28 11:41:23 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-28 11:41:23 - ERROR - Error occurred during folder backup operation: [WinError 3] The system cannot find the path specified: 'source_folder'
+2024-02-28 12:21:48 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-28 12:21:48 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-28 12:21:48 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-28 12:25:34 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-28 12:25:34 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-28 12:25:34 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-28 12:26:37 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-28 12:26:37 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-28 12:26:37 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-28 12:26:58 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-28 12:26:58 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-28 12:26:58 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-28 12:28:10 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-28 12:28:10 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-28 12:28:10 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-29 08:28:52 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-29 08:28:52 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-29 08:28:52 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-29 08:28:52 - INFO - Folder 'char_folder' backed up to 'char_backup_20240229'.
+2024-02-29 08:34:44 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-29 08:34:44 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-29 08:34:44 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-29 08:34:44 - INFO - Folder 'char_folder' backed up to 'char_backup_20240229'.
+2024-02-29 08:44:57 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-29 08:44:57 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-29 08:44:57 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-29 08:44:57 - INFO - Folder 'char_folder' backed up to 'char_backup_20240229'.
+2024-02-29 08:51:37 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-29 08:51:37 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-29 08:51:37 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-29 08:51:37 - INFO - Folder 'char_folder' backed up to 'char_backup_20240229'.
+2024-02-29 08:51:51 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-29 08:51:51 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-29 08:51:51 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-29 08:51:51 - ERROR - Error occurred during folder backup operation: [WinError 183] Cannot create a file when that file already exists: 'char_backup\\char_backup_20240229'
+2024-02-29 09:04:44 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-29 09:04:44 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-29 09:04:44 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-29 09:04:44 - ERROR - Error occurred during folder backup operation: name 'dest_folder' is not defined
+2024-02-29 09:04:52 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-29 09:04:52 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-29 09:04:52 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-29 09:04:52 - ERROR - Error occurred during folder backup operation: [WinError 183] Cannot create a file when that file already exists: 'char_backup\\char_backup_20240229_1'
+2024-02-29 09:05:04 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-29 09:05:04 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-29 09:05:04 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-29 09:05:04 - ERROR - Error occurred during folder backup operation: [WinError 183] Cannot create a file when that file already exists: 'char_backup\\char_backup_20240229_1'
+2024-02-29 09:10:02 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-29 09:10:02 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-29 09:10:02 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-29 09:10:02 - INFO - Folder 'char_folder' backed up to 'char_backup_1'.
+2024-02-29 09:18:47 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-29 09:18:47 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-29 09:18:47 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-29 09:18:47 - ERROR - Error occurred during folder backup operation: [WinError 183] Cannot create a file when that file already exists: 'char_backup\\char_backup_20240229'
+2024-02-29 09:19:12 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-29 09:19:12 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-29 09:19:12 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-29 09:19:12 - ERROR - Error occurred during folder backup operation: [WinError 183] Cannot create a file when that file already exists: 'char_backup\\char_backup_20240229'
+2024-02-29 09:21:15 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-29 09:21:15 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-29 09:21:15 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-29 09:21:15 - ERROR - Error occurred during folder backup operation: [WinError 183] Cannot create a file when that file already exists: 'char_backup\\char_backup_20240229'
+2024-02-29 09:22:07 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-29 09:22:07 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-29 09:22:07 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-29 09:22:07 - ERROR - Error occurred during folder backup operation: [WinError 183] Cannot create a file when that file already exists: 'char_backup\\char_backup_20240229'
+2024-02-29 09:31:18 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-29 09:31:18 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-29 09:31:18 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-29 09:31:18 - INFO - Folder 'char_folder' backed up to 'char_backup_20240229_2'.
+2024-02-29 09:31:39 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-29 09:31:39 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-29 09:31:39 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-29 09:31:39 - INFO - Folder 'char_folder' backed up to 'char_backup_20240229_3'.
+2024-02-29 09:32:21 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-29 09:32:21 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-29 09:32:21 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-29 09:32:21 - INFO - Folder 'char_folder' backed up to 'char_backup_20240229_4'.
+2024-02-29 09:32:30 - ERROR - Error occurred during backup operation for file 'example.txt': [Errno 2] No such file or directory: 'example.txt'
+2024-02-29 09:32:30 - WARNING - File 'file1.txt' could not be found in 'default_excel' folder.
+2024-02-29 09:32:30 - WARNING - File 'file2.txt' could not be found in 'default_excel' folder.
+2024-02-29 09:32:30 - INFO - Folder 'char_folder' backed up to 'char_backup_20240229_5'.

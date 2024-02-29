@@ -17,6 +17,17 @@
     "umon_spawn_nightmare": 1,
     "umon_spawn_hell": 1,
 
+    "mon_den_normal": 1,
+    "mon_den_nightmare": 1,
+    "mon_den_hell": 1,
+    "cmon_spawn_normal": 1,
+    "cmon_spawn_nightmare": 1,
+    "cmon_spawn_hell": 1,
+    "umon_spawn_normal": 1,
+    "umon_spawn_nightmare": 1,
+    "umon_spawn_hell": 1,
+
+
     "inventory_tab1": "Personal",
     "inventory_tab2": "Shared",
     "inventory_tab3": "Shared",
@@ -27,6 +38,8 @@
     "inventory_tab8": "Shared",
 
     "enable_free_respec": false
+
+    
     
   }
   

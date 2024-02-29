@@ -1,7 +1,9 @@
+import sys
 import shutil
 import os
 import logger_config
 import logging
+from datetime import datetime
 
 # Configure logging
 logger_config.configure_logging()
@@ -65,10 +67,60 @@ def restore_default(*file_names):
     except Exception as e:
         logging.error(f"Error occurred during restore operation: {e}")
 
-# Example usage
+def backup_folder(src_folder, backup_folder):
+    """
+    Function to backup the contents of a folder to a destination folder.
+
+    Args:
+    - src_folder: Path to the source folder.
+    - dest_folder: Path to the destination folder.
+    """
+    try:
+        # Get the current date in YYYYMMDD format
+        current_date = datetime.now().strftime('%Y%m%d')
+
+        src_abs_path = os.path.abspath(src_folder)
+
+        backup_abs_path = os.path.abspath(backup_folder)
+
+        suffix = ""
+        while True:
+            dest_folder_with_suffix = f"{backup_folder}_{current_date}{suffix}"
+            # save backup destination path        
+            dest_folder_path = os.path.join(backup_abs_path, dest_folder_with_suffix)
+
+            if not os.path.exists(dest_folder_path):
+                os.makedirs(dest_folder_path)
+                break
+            # Increment the suffix if the folder already exists
+            suffix = f"_{int(suffix.split('_')[-1]) + 1 if suffix else 1}"
+        
+        # Copy all contents of the source folder to the new destination folder
+        for item in os.listdir(src_abs_path):
+            item_path = os.path.join(src_abs_path, item)
+            if os.path.isdir(item_path):
+                shutil.copytree(item_path, os.path.join(dest_folder_path, item))
+            else:
+                shutil.copy(item_path, dest_folder_path)
+        
+
+        logging.info(f"Folder '{src_folder}' backed up to '{dest_folder_with_suffix}'.")
+    except Exception as e:
+        logging.error(f"Error occurred during folder backup operation: {e}")
+
 if __name__ == "__main__":
+    if len(sys.argv) != 3:
+        print("Usage: python backup_restore.py source_folder backup_folder")
+        sys.exit(1)
+
+    source_folder = sys.argv[1]
+    destination_folder = sys.argv[2]
+
     # Example backup
     backup_txt('example.txt')
 
     # Example restore
     restore_default('file1.txt', 'file2.txt')
+
+    # Example folder backup
+    backup_folder(source_folder, destination_folder)

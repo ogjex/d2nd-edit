@@ -3,8 +3,9 @@ THE BIG FAT BACKLOG
 
 *- create backup function
     *- create backup folder if not exists
-    - add char backup
-    - add appended numbers if multiple backups from same day
+    *- add char backup
+    *- add appended numbers if multiple backups from same day
+    - add restore from backup
     - add optional comment on backups (saved as a .txt file)
 
 *- create restore defaults
