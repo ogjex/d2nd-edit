@@ -1,5 +1,5 @@
 import sys
-from backup_restore import backup_txt, restore_default
+from backupmanager import backup_txt, restore_default
 from edit_columns import multiply_columns
 
 def main(input_file, multiplication_factor, restore_files=None):
