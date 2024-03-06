@@ -6,17 +6,17 @@ THE BIG FAT BACKLOG
         - txt editor
         - json editor
     - unit test
-        *- backup_manager
+        - backup_manager
+            - test new restore_defaults function
         - txt editor
         - json editor
     - make code into MVP
     
-
 *- create backup function
     *- create backup folder if not exists
     *- add char backup
     *- add appended numbers if multiple backups from same day
-    - add restore from backup
+    - add char restore from backup
     - add optional comment on backups (saved as a .txt file)
 
 *- create restore defaults
