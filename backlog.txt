@@ -2,8 +2,15 @@ THE BIG FAT BACKLOG
 
 - Code Improvement
     - make code Object Oriented
-    - make code into MVC
-    - incorporate pubsub system
+        *- backup_manager
+        - txt editor
+        - json editor
+    - unit test
+        *- backup_manager
+        - txt editor
+        - json editor
+    - make code into MVP
+    
 
 *- create backup function
     *- create backup folder if not exists

@@ -247,3 +247,22 @@
 2024-03-06 11:58:11 - INFO - Folder 'test_source' backed up to 'test_backup_20240306'.
 2024-03-06 11:58:11 - WARNING - File 'test_file.txt' already exists in 'default_excel' folder.
 2024-03-06 11:58:11 - WARNING - File 'test_file.txt' already exists in 'default_excel' folder.
+2024-03-06 13:00:54 - INFO - Folder 'test_source' backed up to 'test_backup_20240306'.
+2024-03-06 13:00:54 - INFO - File 'test_file.txt' copied to 'default_excel' folder.
+2024-03-06 13:00:54 - WARNING - File 'test_file.txt' already exists in 'default_excel' folder.
+2024-03-06 13:02:28 - INFO - Folder 'test_source' backed up to 'test_backup_20240306'.
+2024-03-06 13:02:28 - WARNING - File 'test_file.txt' already exists in 'default_excel' folder.
+2024-03-06 13:02:28 - WARNING - File 'test_file.txt' already exists in 'default_excel' folder.
+2024-03-06 13:03:32 - INFO - Folder 'test_source' backed up to 'test_backup_20240306'.
+2024-03-06 13:03:32 - WARNING - File 'test_file.txt' already exists in 'default_excel' folder.
+2024-03-06 13:03:32 - WARNING - File 'test_file.txt' already exists in 'default_excel' folder.
+2024-03-06 13:03:51 - INFO - Folder 'test_source' backed up to 'test_backup_20240306'.
+2024-03-06 13:03:51 - INFO - File 'test_file.txt' copied to 'default_excel' folder.
+2024-03-06 13:03:51 - WARNING - File 'test_file.txt' already exists in 'default_excel' folder.
+2024-03-06 13:05:29 - INFO - Folder 'test_source' backed up to 'test_backup_20240306'.
+2024-03-06 13:05:29 - INFO - File 'test_file.txt' copied to 'default_excel' folder.
+2024-03-06 13:05:29 - INFO - File 'test_file.txt' copied to 'default_excel' folder.
+2024-03-06 13:07:28 - INFO - Folder 'test_source' backed up to 'test_backup_20240306'.
+2024-03-06 13:07:28 - INFO - File 'test_file.txt' copied to 'default_excel' folder.
+2024-03-06 13:07:28 - INFO - File 'test_file.txt' copied to 'default_excel' folder.
+2024-03-06 13:07:28 - INFO - File 'test_file.txt' restored to main folder.

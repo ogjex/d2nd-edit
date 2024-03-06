@@ -10,12 +10,10 @@ logger_config.configure_logging()
 
 class BackupManager (object):
 
-    default_excel_folder = 'default_excel'
-
     def __init__(self) -> None:
         pass
 
-    def backup_txt(self, input_file):
+    def backup_game_files(self, default_game_file_folder, input_file):
         """
         Function to backup a text file.
 
@@ -25,14 +23,14 @@ class BackupManager (object):
         try:
             # Create the default_excel folder if it doesn't exist
             
-            if not os.path.exists(BackupManager.default_excel_folder):
-                os.makedirs(BackupManager.default_excel_folder)
+            if not os.path.exists(default_game_file_folder):
+                os.makedirs(default_game_file_folder)
 
             # Get the filename from the input file path
             file_name = os.path.basename(input_file)
             
             # Construct the destination file path in the default_excel folder
-            destination_file = os.path.join(BackupManager.default_excel_folder, file_name)
+            destination_file = os.path.join(default_game_file_folder, file_name)
 
             # If the destination file doesn't exist, copy the input file to the default_excel folder
             if not os.path.exists(destination_file):
@@ -43,33 +41,29 @@ class BackupManager (object):
         except Exception as e:
             logging.error(f"Error occurred during backup operation for file '{input_file}': {e}")
 
-    def restore_default(self, *file_names):
+    def remove_files(self, folder, file_names):
+        for file_name in file_names:
+            os.remove(os.path.join(folder, file_name))
+            if os.path.exists(os.path.join(folder, file_name)):
+                logging.info(f"Default values of file '{file_name}' restored to main folder.")    
+            else:
+                logging.warning(f"File '{file_name}' could not be found in default game file folder.")
+        
+    def restore_default(self, modded_game_file_folder, *file_names):
         """
-        Function to restore default files from 'default_excel' folder to the main folder.
+        Function to restore default files from 'default modded folder' folder to the main folder.
 
         Args:
         - *file_names: Variable number of file names to restore. If no file names provided, all default files will be restored.
         """
         try:
-            # List all files in the 'default_excel' folder
-            default_files = os.listdir(BackupManager.default_excel_folder)
-
-            # If no specific file names provided, restore all default files
-            if not file_names:
-                file_names = default_files
-
-            # Restore each specified file from 'default_excel' folder to main folder
-            for file_name in file_names:
-                # Construct source and destination file paths
-                source_file = os.path.join(BackupManager.default_excel_folder, file_name)
-                destination_file = file_name
-
-                # Check if source file exists and destination file doesn't exist
-                if os.path.exists(source_file):
-                    shutil.copy(source_file, destination_file)
-                    logging.info(f"File '{file_name}' restored to main folder.")
-                else:
-                    logging.warning(f"File '{file_name}' could not be found in 'default_excel' folder.")
+            # If no specific file names provided, restore all default files by removing them
+            if file_names:
+                modded_files = os.listdir(modded_game_file_folder)
+                self.remove_files(modded_game_file_folder, file_names)
+            else:
+            # Restore each specified file from 'default game file' folder by removing each file 
+                self.remove_files(modded_game_file_folder, modded_files) 
         except Exception as e:
             logging.error(f"Error occurred during restore operation: {e}")
 

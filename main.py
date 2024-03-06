@@ -1,6 +1,6 @@
 import sys
-from backupmanager import backup_txt, restore_default
-from edit_columns import multiply_columns
+from backup_manager import backup_txt, restore_default
+from file_editor import multiply_columns
 
 def main(input_file, multiplication_factor, restore_files=None):
     # Backup input file if provided
