@@ -338,3 +338,14 @@
 2024-03-07 14:09:10 - INFO - Folder 'test_char_source' backed up to 'test_char_backup_20240307'.
 2024-03-07 14:09:10 - WARNING - File 'test_file.txt' already exists in 'excel_backup_folder' folder.
 2024-03-07 14:09:10 - INFO - Default values of file 'game_test_file1.txt' restored to main folder.
+2024-03-07 14:15:25 - INFO - Folder 'test_char_source' backed up to 'test_char_backup_20240307'.
+2024-03-07 14:15:25 - WARNING - File 'test_file.txt' already exists in 'excel_backup_folder' folder.
+2024-03-07 14:15:25 - ERROR - Error occurred during restore operation: remove() takes exactly 1 positional argument (2 given)
+2024-03-07 14:16:59 - INFO - Folder 'test_char_source' backed up to 'test_char_backup_20240307'.
+2024-03-07 14:16:59 - WARNING - File 'test_file.txt' already exists in 'excel_backup_folder' folder.
+2024-03-07 14:16:59 - ERROR - Error occurred during restore operation: remove() takes exactly 1 positional argument (2 given)
+2024-03-07 14:16:59 - ERROR - Error occurred during restore operation: remove() takes exactly 1 positional argument (2 given)
+2024-03-07 14:18:16 - INFO - Folder 'test_char_source' backed up to 'test_char_backup_20240307'.
+2024-03-07 14:18:16 - WARNING - File 'test_file.txt' already exists in 'excel_backup_folder' folder.
+2024-03-07 14:18:16 - ERROR - Error occurred during restore operation: remove() takes exactly 1 positional argument (2 given)
+2024-03-07 14:18:16 - ERROR - Error occurred during restore operation: remove() takes exactly 1 positional argument (2 given)

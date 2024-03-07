@@ -20,6 +20,8 @@ class TestBackupManager(unittest.TestCase):
         open(os.path.join(cls.default_game_file_folder, 'game_test_file2.txt'), 'w').close()
         open(os.path.join(cls.your_backup_manager.backup_game_file_folder, 'game_test_file1.txt'), 'w').close()
         open(os.path.join(cls.your_backup_manager.backup_game_file_folder, 'game_test_file2.txt'), 'w').close()
+        open(os.path.join(cls.your_backup_manager.modded_game_file_folder, 'game_test_file1.txt'), 'w').close()
+        open(os.path.join(cls.your_backup_manager.modded_game_file_folder, 'game_test_file2.txt'), 'w').close()
         open(os.path.join(cls.source_folder, 'test_file.txt'), 'w').close()
         open(os.path.join(cls.source_folder, 'test_file1.txt'), 'w').close()
         open(os.path.join(cls.source_folder, 'test_file2.txt'), 'w').close()
@@ -31,13 +33,13 @@ class TestBackupManager(unittest.TestCase):
   
     def test_restore_default_with_specific_files(self):        
         self.your_backup_manager.restore_default(self.default_game_file_folder, 'game_test_file1.txt')
-        self.assertFalse(os.path.exists(os.path.join(self.default_game_file_folder, 'game_test_file1.txt')))
-        self.assertTrue(os.path.exists(os.path.join(self.default_game_file_folder, 'game_test_file2.txt')))
+        self.assertFalse(os.path.exists(os.path.join(self.your_backup_manager.modded_game_file_folder, 'game_test_file1.txt')))
+        self.assertTrue(os.path.exists(os.path.join(self.your_backup_manager.modded_game_file_folder, 'game_test_file2.txt')))
     
     def test_restore_default_without_specific_files(self):  
         self.your_backup_manager.restore_default(self.default_game_file_folder)
-        self.assertFalse(os.path.exists(os.path.join(self.default_game_file_folder, 'game_test_file1.txt')))
-        self.assertFalse(os.path.exists(os.path.join(self.default_game_file_folder, 'game_test_file2.txt')))
+        self.assertFalse(os.path.exists(os.path.join(self.your_backup_manager.modded_game_file_folder, 'game_test_file1.txt')))
+        self.assertFalse(os.path.exists(os.path.join(self.your_backup_manager.modded_game_file_folder, 'game_test_file2.txt')))
     
     def test_backup_folder(self):
         # Test backup_folder method
