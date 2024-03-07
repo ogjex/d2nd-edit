@@ -9,47 +9,48 @@ from datetime import datetime
 logger_config.configure_logging()
 
 class BackupManager (object):
+    backup_game_file_folder = 'excel_backup_folder'
+    modded_game_file_folder = 'modded_excel_files'
 
     def __init__(self) -> None:
         pass
 
-    def backup_game_files(self, default_game_file_folder, input_file):
+    def backup_game_files(self, default_game_file_path):
         """
-        Function to backup a text file.
+        Function to backup a text file. The logic is that we need a local copy from the current mod's excel folder 
+        because we need to overwrite the mod folder's files with our own modded files. 
 
         Args:
         - input_file: Path to the input text file.
         """
         try:
-            # Create the default_excel folder if it doesn't exist
-            
-            if not os.path.exists(default_game_file_folder):
-                os.makedirs(default_game_file_folder)
+            # Create the backup game file folder if it doesn't exist
+            if not os.path.exists(self.backup_game_file_folder):
+                os.makedirs(self.backup_game_file_folder)
 
             # Get the filename from the input file path
-            file_name = os.path.basename(input_file)
-            
-            # Construct the destination file path in the default_excel folder
-            destination_file = os.path.join(default_game_file_folder, file_name)
+            default_file_name = os.path.basename(default_game_file_path)
+            # Construct the destination file path in the default game file folder
+            destination_file_path = os.path.join(self.backup_game_file_folder, default_file_name)
 
-            # If the destination file doesn't exist, copy the input file to the default_excel folder
-            if not os.path.exists(destination_file):
-                shutil.copy(input_file, destination_file)
-                logging.info(f"File '{file_name}' copied to 'default_excel' folder.")
+            # If the destination file doesn't exist, copy the input file to the default game file folder
+            if not os.path.exists(destination_file_path):
+                shutil.copy(default_game_file_path, destination_file_path)
+                logging.info(f"File '{default_file_name}' copied to '{self.backup_game_file_folder}' folder.")
             else:
-                logging.warning(f"File '{file_name}' already exists in 'default_excel' folder.")
+                logging.warning(f"File '{default_file_name}' already exists in '{self.backup_game_file_folder}' folder.")
         except Exception as e:
-            logging.error(f"Error occurred during backup operation for file '{input_file}': {e}")
+            logging.error(f"Error occurred during backup operation for file '{default_game_file_path}': {e}")
 
-    def remove_files(self, folder, file_names):
+    def restore_files(self, destination_folder, file_names):
         for file_name in file_names:
-            os.remove(os.path.join(folder, file_name))
-            if os.path.exists(os.path.join(folder, file_name)):
+            shutil.copy(os.path.join(self.backup_game_file_folder, file_name), destination_folder)
+            if os.path.exists(os.path.join(destination_folder, file_name)):
                 logging.info(f"Default values of file '{file_name}' restored to main folder.")    
             else:
                 logging.warning(f"File '{file_name}' could not be found in default game file folder.")
         
-    def restore_default(self, modded_game_file_folder, *file_names):
+    def restore_default(self, default_game_file_folder, *file_names):
         """
         Function to restore default files from 'default modded folder' folder to the main folder.
 
@@ -57,13 +58,18 @@ class BackupManager (object):
         - *file_names: Variable number of file names to restore. If no file names provided, all default files will be restored.
         """
         try:
-            # If no specific file names provided, restore all default files by removing them
+            # If modded game folder does not exist, create it.
+            if not os.path.exists(self.modded_game_file_folder):
+                os.makedirs(self.modded_game_file_folder)
+                logging.info(f"No modded game file folder detected. Folder '{self.modded_game_file_folder}' created in '{os.path.abspath(self.modded_game_file_folder)}'.")    
+
+            # If no specific file names provided, restore all default files by overwriting the files in game file folder based on all the filenames in the backup folder
+            if not file_names:
+                modded_files = os.listdir(self.modded_game_file_folder)
+                self.restore_files(default_game_file_folder, modded_files)
+            
             if file_names:
-                modded_files = os.listdir(modded_game_file_folder)
-                self.remove_files(modded_game_file_folder, file_names)
-            else:
-            # Restore each specified file from 'default game file' folder by removing each file 
-                self.remove_files(modded_game_file_folder, modded_files) 
+                self.restore_files(default_game_file_folder, file_names)
         except Exception as e:
             logging.error(f"Error occurred during restore operation: {e}")
 
