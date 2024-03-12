@@ -349,3 +349,33 @@
 2024-03-07 14:18:16 - WARNING - File 'test_file.txt' already exists in 'excel_backup_folder' folder.
 2024-03-07 14:18:16 - ERROR - Error occurred during restore operation: remove() takes exactly 1 positional argument (2 given)
 2024-03-07 14:18:16 - ERROR - Error occurred during restore operation: remove() takes exactly 1 positional argument (2 given)
+2024-03-12 09:55:51 - INFO - Folder 'test_char_source' backed up to 'test_char_backup_20240312'.
+2024-03-12 09:55:51 - WARNING - File 'test_file.txt' already exists in 'excel_backup_folder' folder.
+2024-03-12 09:55:51 - INFO - Default values of file 'game_test_file1.txt' restored to main folder.
+2024-03-12 09:55:51 - INFO - Default values of file 'game_test_file2.txt' restored to main folder.
+2024-03-12 09:56:51 - INFO - Folder 'test_char_source' backed up to 'test_char_backup_20240312'.
+2024-03-12 09:56:51 - WARNING - File 'test_file.txt' already exists in 'excel_backup_folder' folder.
+2024-03-12 09:56:51 - INFO - Default values of file 'game_test_file1.txt' restored to main folder.
+2024-03-12 09:56:51 - INFO - Default values of file 'game_test_file2.txt' restored to main folder.
+2024-03-12 09:57:39 - INFO - Folder 'test_char_source' backed up to 'test_char_backup_20240312_1'.
+2024-03-12 09:57:39 - WARNING - File 'test_file.txt' already exists in 'excel_backup_folder' folder.
+2024-03-12 09:57:39 - INFO - Default values of file 'game_test_file1.txt' restored to main folder.
+2024-03-12 09:57:39 - INFO - Default values of file 'game_test_file2.txt' restored to main folder.
+2024-03-12 10:00:05 - INFO - Folder 'test_char_source' backed up to 'test_char_backup_20240312_2'.
+2024-03-12 10:00:05 - WARNING - File 'test_file.txt' already exists in 'excel_backup_folder' folder.
+2024-03-12 10:00:05 - INFO - Default values of file 'game_test_file1.txt' restored to main folder.
+2024-03-12 10:00:05 - INFO - Default values of file 'game_test_file2.txt' restored to main folder.
+2024-03-12 10:02:39 - INFO - Folder 'test_char_source' backed up to 'test_char_backup_20240312_3'.
+2024-03-12 10:02:39 - WARNING - File 'test_file.txt' already exists in 'excel_backup_folder' folder.
+2024-03-12 10:02:39 - INFO - Default values of file 'game_test_file1.txt' restored to main folder.
+2024-03-12 10:02:39 - INFO - Default values of file 'game_test_file2.txt' restored to main folder.
+2024-03-12 10:04:30 - INFO - Folder 'test_char_source' backed up to 'test_char_backup_20240312_4'.
+2024-03-12 10:04:30 - WARNING - File 'test_file.txt' already exists in 'excel_backup_folder' folder.
+2024-03-12 10:04:30 - INFO - Default values of file 'game_test_file1.txt' restored to main folder.
+2024-03-12 10:05:24 - INFO - Folder 'test_char_source' backed up to 'test_char_backup_20240312_5'.
+2024-03-12 10:05:24 - WARNING - File 'test_file.txt' already exists in 'excel_backup_folder' folder.
+2024-03-12 10:05:24 - INFO - Default values of file 'game_test_file1.txt' restored to main folder.
+2024-03-12 10:06:13 - INFO - Folder 'test_char_source' backed up to 'test_char_backup_20240312'.
+2024-03-12 10:06:13 - WARNING - File 'test_file.txt' already exists in 'excel_backup_folder' folder.
+2024-03-12 10:06:13 - INFO - Default values of file 'game_test_file1.txt' restored to main folder.
+2024-03-12 10:06:13 - INFO - Default values of file 'game_test_file2.txt' restored to main folder.

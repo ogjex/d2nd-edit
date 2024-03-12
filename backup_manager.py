@@ -44,15 +44,16 @@ class BackupManager (object):
 
     def restore_files(self, destination_folder, file_names):
         for file_name in file_names:
-            # copy all files from backup to the game file folder first
-            shutil.copy(os.path.join(self.backup_game_file_folder, file_name), destination_folder)
-            # then we remove the modded files to ensure that all values are restored.
-            os.remove(os.path.join(self.modded_game_file_folder, file_name), destination_folder)
-            if not os.path.exists(os.path.join(self.modded_game_file_folder, file_name)):
-                logging.info(f"Default values of file '{file_name}' restored to main folder.")    
+            
+            if os.path.exists(os.path.join(self.modded_game_file_folder, file_name)):
+                # copy all files from backup to the game file folder first
+                shutil.copy(os.path.join(self.backup_game_file_folder, file_name), destination_folder)
+                # then we remove the modded files to ensure that all values are restored
+                os.remove(os.path.join(self.modded_game_file_folder, file_name))
+                logging.info(f"Default values of file '{file_name}' restored to main folder.")            
             else:
                 logging.warning(f"File '{file_name}' could not be found in default game file folder.")
-        
+    
     def restore_default(self, default_game_file_folder, *file_names):
         """
         Function to restore default files from 'default modded folder' folder to the main folder.
